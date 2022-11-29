@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0298CA;
+}
+
+p{
+    color: grey;
+    margin: 5px 10px 5px 10px;
+    cursor: pointer;
+}
+
+.container{
+    width: 300px;
+    border-radius: 8px;
+    background-color: #f1f9f9;
+    border: 1px #fff solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow:hidden ;
+}
+
+
+#display{
+    text-align: right;
+    height: 100px;
+    line-height: 14vh;
+    font-size: 35px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5px;
+}
+
+.button{
+    background-color: #fff;
+    border: 0.5px solid #d9d9d9;
+    height: 80px;
+    font-size: 20px;
+    margin: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #d9d9d9;
+}
+
+#equal{
+    background-color: #0298CA;
+    color: #fff;
+}
+
+#equal:hover{
+    background-color: #21367f;
+}
+
+.operator{
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 1000px) {
+    .container{
+        max-width: 900px;
+    }
+}
